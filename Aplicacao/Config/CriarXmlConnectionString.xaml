@@ -3,17 +3,16 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Aplicacao.Config"
       mc:Ignorable="d"
-      Title="CriarXmlConnectionString" Height="300" Width="550">
+      Title="CriarXmlConnectionString" Height="300" Width="550" WindowStartupLocation="CenterScreen"  ResizeMode="CanResize" MaxHeight="300" MinHeight="300" MaxWidth="550" MinWidth="550">
 
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="112,22,0,0" TextWrapping="Wrap" Text="CONFIGURAÇÃO CONNECTIONSTRING" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="69,85,0,0" TextWrapping="Wrap" Text="Instancia" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="69,113,0,0" TextWrapping="Wrap" Text="Banco" VerticalAlignment="Top" Width="59" FontSize="14" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="69,141,0,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" FontSize="14" Width="59" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="69,169,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" FontSize="14" Width="59" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="69,114,0,0" TextWrapping="Wrap" Text="Banco" VerticalAlignment="Top" Width="59" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="69,146,0,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" FontSize="14" Width="59" FontWeight="Bold" RenderTransformOrigin="0.394,0.58"/>
+        <TextBlock HorizontalAlignment="Left" Margin="69,174,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" FontSize="14" Width="59" FontWeight="Bold"/>
 
         <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="165,215,0,0" VerticalAlignment="Top" Width="150" Click="ButtonSalvar_Click" Height="30"/>
         <Button x:Name="btnSair" Content="Sair" HorizontalAlignment="Left" Margin="325,215,0,0" VerticalAlignment="Top" Width="150" Click="ButtonSair_Click" Height="30"/>

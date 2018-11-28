@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aplicacao"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="550" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanResize" MaxHeight="300" MinHeight="300" MaxWidth="550" MinWidth="550">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="120,137,0,0" TextWrapping="Wrap" Text="Usuario" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="1.326,0.5" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,169,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" FontWeight="Bold" Width="43" FontSize="14"/>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="23" Margin="193,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
+        <PasswordBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="193,169,0,0" VerticalAlignment="Top" Width="310"/>
+        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="193,209,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="BtnEntrar_Click"/>
+        <Button Click="ButtonSair_Click" Content="Sair" HorizontalAlignment="Left" Margin="353,209,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,33,0,0" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+
     </Grid>
 </Window>

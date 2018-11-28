@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Aplicacao.TelaMensagem;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Xml;
@@ -10,7 +11,7 @@ namespace Aplicacao.Config {
             InitializeComponent();
 
             txtInstancia.Focus();
-            EventManager.RegisterClassHandler(typeof(TextBox), TextBox.KeyDownEvent, new KeyEventHandler(TextBox_KeyDown));
+            EventManager.RegisterClassHandler(typeof(TextBox), KeyDownEvent, new KeyEventHandler(TextBox_KeyDown));
         }
 
         private void ButtonSalvar_Click(object sender, RoutedEventArgs e) {
@@ -21,7 +22,10 @@ namespace Aplicacao.Config {
                 cn.Usuario = txtUsuario.Text;
                 cn.Senha = txtSenha.Text;
                 cn.CriarConnectioString();
-                MessageBox.Show("ConnectionString criado com sucesso!!");
+
+                Mensagem msg = new Mensagem();
+                msg.ShowDialog();
+
                 Close();
             }
             catch (XmlException ex) {
