@@ -26,7 +26,7 @@ namespace Aplicacao {
 
             MainWindow mw = new MainWindow();
 
-            if (System.Diagnostics.Process.GetProcessesByName("Imob - Sistema Imobiliario").Count() >= 2) {     //Perguntar o Andre pq desse CONUT >= 2 aa
+            if (System.Diagnostics.Process.GetProcessesByName("Imob - Sistema Imobiliario").Count() >= 2) {     //Perguntar o Andre pq desse CONUT >= 2
                 EncerraApp();
             }
             else {
